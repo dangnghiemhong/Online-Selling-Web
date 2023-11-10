@@ -38,7 +38,11 @@
 ## Setup
 - Clone repository using the github link or you can download the zip file.
 - After opening the project, delete all Migration files.
-- Open file Web.config and in part ``` <connectionStrings>  <add name="DefaultConnection" connectionString="Data Source=DESKTOP-D1HSOQO\SQLEXPRESS;Initial Catalog=WebBanHangOnline01;Integrated Security=True; MultipleActiveResultSets=True" providerName="System.Data.SqlClient" /> </connectionStrings> ``` you need to change ```connectionString``` by your SQL server and ```Initial Catalog``` by the name you want.
+- Open file Web.config and in part
+```html
+<connectionStrings>  <add name="DefaultConnection" connectionString="Data Source=DESKTOP-D1HSOQO\SQLEXPRESS;Initial Catalog=WebBanHangOnline01;Integrated Security=True; MultipleActiveResultSets=True" providerName="System.Data.SqlClient" /> </connectionStrings>
+```
+you need to change ```connectionString``` by your SQL server and ```Initial Catalog``` by the name you want.
 - Open the Package Manager Console interface and type the command:```add-migration NewDatabase```.
 - Continue typing the command line: ```update-Database Verbose```.
 - If there are some errors, type more command lines: ```Update-Package EntityFramework -Version 6.4.4``` in Package Manager Console.
